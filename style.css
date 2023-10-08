@@ -23,6 +23,7 @@ header {
     align-items: center;
     justify-content: flex-end;
     padding: 2.5rem 1.5rem;
+    position: relative;
 }
 
 /* nav */
@@ -31,7 +32,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     /* background-color: green; */
-    width: 18%;
+    width: 12rem;
+    position: absolute;
 }
 
 /* all links */
@@ -80,7 +82,7 @@ main {
 
 /* google logo */
 main img {
-    width: 23%;
+    width: 250px;
 }
 
 /* search section */
@@ -102,7 +104,7 @@ label {
     justify-content: space-between;
     padding: 0.1rem;
     border-radius: 48px;
-    width: 40%;
+    width: 30%;
     border: 1px solid #ddd;
 }
 
@@ -154,8 +156,8 @@ label input {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 6.5rem;
-    width: 7rem;
+    height: 6.3rem;
+    width: 6.6rem;
     /* background-color: blue; */
 }
 
@@ -190,4 +192,25 @@ label input {
     border: none;
     outline: none;
     border-radius: 5px;
+}
+
+
+/* media queries */
+
+/* 1500px and below */
+@media screen and (max-width: 1500px) {
+
+    /* search input container */
+        label {
+            width: 50%;
+        }
+}
+
+/* 670px and below */
+@media screen and (max-width: 670px) {
+
+    /* search input container */
+    label {
+        width: 70%;
+    }
 }
