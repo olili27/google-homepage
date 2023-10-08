@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* body */
 body {
     /* background-color: yellow; */
     display: flex;
@@ -13,6 +14,7 @@ body {
     /* height: 100vh; */
 }
 
+/* header */
 header {
     display: flex;
     /* background-color: pink; */
@@ -23,6 +25,7 @@ header {
     padding: 2.5rem 1.5rem;
 }
 
+/* nav */
 nav {
     display: flex;
     align-items: center;
@@ -31,13 +34,15 @@ nav {
     width: 18%;
 }
 
+/* all links */
 a {
     text-decoration: none;
 }
 
+/* nav links */
 nav a {
     font-size: 14px;
-    font-weight: bolder;
+    font-weight: 400;
     color: #666;
 }
 
@@ -63,6 +68,7 @@ nav a {
     border-radius: 50%;
 }
 
+/* main content */
 main {
     /* background-color: cornflowerblue; */
     width: 100%;
@@ -72,10 +78,12 @@ main {
     padding-top: 5rem;
 }
 
+/* google logo */
 main img {
     width: 23%;
 }
 
+/* search section */
 .search-section {
     /* background-color: beige; */
     width: 100%;
@@ -88,15 +96,17 @@ main img {
     margin-top: 1rem;
 }
 
+/* search input container */
 label {
     display: flex;
     justify-content: space-between;
     padding: 0.1rem;
-    border-radius: 50px;
-    width: 50%;
+    border-radius: 48px;
+    width: 40%;
     border: 1px solid #ddd;
 }
 
+/* search icon */
 .fa-search {
     padding: 0.8rem;
     padding-left: 1rem;
@@ -104,6 +114,7 @@ label {
     font-size: 14px;
 }
 
+/* search input */
 label input {
         height: 100%;
         flex: 1;
@@ -117,6 +128,7 @@ label input {
     opacity: 0.8;
 }
 
+/* google microphone */
 #google-microphone {
         margin-right: 0.8rem;
         margin-block: auto;
@@ -124,8 +136,58 @@ label input {
         width: 0.7rem;
 }
 
+/* shortcuts container */
+ section{
+    /* background-color: yellow; */
+    margin-top: 1.5rem;
+    width: 18rem;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    row-gap: 7px;
+}
+
+/* shortcuts */
+.add-shortcut {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 6.5rem;
+    width: 7rem;
+    /* background-color: blue; */
+}
+
+/* adds a new shortcut */
+.add {
+    font-weight: bolder;
+}
+
+.shortcut-logo {
+    background-color: #4285F4;
+    color: white;
+    font-size: normal;
+    padding: 15px;
+    border-radius: 50%;
+    
+}
+
+.shortcut-name {
+    font-size: 15px;
+        font-weight: 300;
+        color: rgb(71, 66, 66);
+}
+
+/* customize btn */
 #customize {
     position: absolute;
     right: 1.5rem;
     bottom: 1rem;
+    padding: 0.6rem 0.8rem;
+    background-color: #474646;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
 }

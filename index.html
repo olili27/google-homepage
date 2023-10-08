@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- header -->
     <header>
         <nav>
            <div class="nav-link">
@@ -16,23 +17,48 @@
             <img class="btn nav-element" id="google-account" src="./images/two.jpg" alt="Google Account Signed in">
         </nav>
     </header>
+
+    <!-- google logo, search section, shortcuts -->
     <main>
-            <img src="./images/googlelogo_color_160x56dp.png" alt="Google Logo">
+
+        <!-- google logo -->
+        <img src="./images/googlelogo_color_160x56dp.png" alt="Google Logo">
+
+        <!-- search section -->
         <div class="search-section">
             <label for="">
                     <i class="fa fa-search" aria-hidden="true"></i>
                     <input type="text" placeholder="Search Google or type a URL" >
                     <img title="Search by voice" id="google-microphone" src="./images/Google_microphone_logo.png" alt="Google microphone ">
             </label>
-            <div>
-                <button>Google Search</button>
-                <button>I'm feeling lucky</button>
-            </div>
         </div>
-        <div>
-            +
+
+        <!-- shortcuts -->
+       <section>
+         <div class="add-shortcut">
+           <span class="shortcut-logo">F</span>
+           <span class="shortcut-name">FreeCodeCamp</span>
         </div>
+        <div class="add-shortcut">
+           <span class="shortcut-logo">G</span>
+           <span class="shortcut-name">GitHub</span>
+        </div>
+         <div class="add-shortcut">
+           <span class="shortcut-logo">F</span>
+           <span class="shortcut-name">FreeCodeCamp</span>
+        </div>
+        <div class="add-shortcut">
+           <span class="shortcut-logo">G</span>
+           <span class="shortcut-name">GitHub</span>
+        </div>
+        <div class="add-shortcut">
+           <span class="shortcut-logo add">+</span>
+           <span class="shortcut-name">Add shortcut</span>
+        </div>
+       </section>
     </main>
+
+    <!-- customize button -->
         <button id="customize">
             customize
         </button>
