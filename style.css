@@ -95,7 +95,7 @@ main img {
     justify-content: center;
     align-items: center;
     padding-block: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 /* search input container */
@@ -141,7 +141,7 @@ label input {
 /* shortcuts container */
  section{
     /* background-color: yellow; */
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     width: 18rem;
     margin-inline: auto;
     display: grid;
@@ -202,7 +202,7 @@ label input {
 
     /* search input container */
         label {
-            width: 50%;
+            width: 45%;
         }
 }
 
