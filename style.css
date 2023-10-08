@@ -170,13 +170,13 @@ label input {
     background-color: #4285F4;
     color: white;
     font-size: normal;
-    padding: 15px;
+    padding: 14px;
     border-radius: 50%;
     
 }
 
 .shortcut-name {
-    font-size: 15px;
+    font-size: 14px;
         font-weight: 300;
         color: rgb(71, 66, 66);
 }
