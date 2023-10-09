@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
     /* height: 100vh; */
 }
 
@@ -41,9 +42,13 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 /* nav links */
 nav a {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     color: #666;
 }
@@ -158,7 +163,7 @@ label input {
     align-items: center;
     height: 6.3rem;
     width: 6.6rem;
-    /* background-color: blue; */
+    background-color: blue;
 }
 
 /* adds a new shortcut */
@@ -176,9 +181,13 @@ label input {
 }
 
 .shortcut-name {
-    font-size: 14px;
-        font-weight: 300;
-        color: rgb(71, 66, 66);
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(71, 66, 66);
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* customize btn */
@@ -212,5 +221,13 @@ label input {
     /* search input container */
     label {
         width: 70%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    /* search input container */
+    label {
+        width: 90%;
     }
 }
