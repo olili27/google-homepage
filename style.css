@@ -6,12 +6,13 @@
 
 /* body */
 body {
-    /* background-color: yellow; */
+    /* background-color: black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    /* color: white; */
     /* height: 100vh; */
 }
 
@@ -118,6 +119,7 @@ label {
     border-radius: 80px;
     width: 10%;
     border: 1px solid #ddd;
+    /* background: white; */
 }
 
 /* search icon */
@@ -126,6 +128,7 @@ label {
     padding-left: 1rem;
     opacity: 0.4;
     font-size: 14px;
+    /* color: black; */
 }
 
 /* search input */
@@ -188,7 +191,9 @@ label input {
     background-color: #4285F4;
     color: white;
     text-align: center;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* width: 10px;
     height: 20px; */
     font-size: normal;
@@ -212,7 +217,7 @@ label input {
     position: absolute;
     right: 1.5rem;
     bottom: 1rem;
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 1.5rem;
     background-color: rgba(10, 10, 10, 0.6);
     color: white;
     border: none;
