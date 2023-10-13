@@ -12,8 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
-    /* color: white; */
-    /* height: 100vh; */
 }
 
 /* header */
@@ -44,6 +42,11 @@ nav {
 /* all links */
 a {
     text-decoration: none;
+}
+
+/* all list items */
+li {
+    list-style: none;
 }
 
 a:hover {
@@ -90,7 +93,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5rem;
+    /* padding-top: 5rem; */
 }
 
 /* google logo */
@@ -117,7 +120,7 @@ label {
     justify-content: space-between;
     padding: 0.1rem;
     border-radius: 80px;
-    width: 10%;
+    width: 30%;
     border: 1px solid #ddd;
     /* background: white; */
 }
@@ -154,75 +157,77 @@ label input {
         width: 0.7rem;
 }
 
-/* shortcuts container */
- section{
-    /* background-color: yellow; */
-    margin-top: 1rem;
-    width: 18rem;
-    margin-inline: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
-    row-gap: 7px;
-}
-
-/* shortcuts */
-.add-shortcut {
+/* sayings */
+.sayings {
+    margin-block: 1.5rem;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 6rem;
-    width: 6.6rem;
-    /* background-color: blue; */
+    /* background-color: green; */
+    width: 18rem;
+}
+
+.sayings>button {
+    outline: none;
+    border: none;
+    padding: 11px 18px;
+    opacity: 0.8;
+    font-size: 14px;
     border-radius: 5px;
+    background-color: rgba(240, 240, 240, 0.7);
+    /* background-color: yellow; */
 }
 
-.add-shortcut:hover {
-    background-color: rgba(243, 238, 238, 0.8);
+.sayings>button:hover {
+    cursor: pointer;
 }
 
-/* adds a new shortcut */
-.add {
-    font-weight: bolder;
+/* languages */
+span{
+    font-size: 13.4px;
 }
 
-.shortcut-logo {
-    background-color: #4285F4;
-    color: white;
-    text-align: center;
+#languages{
+    padding-bottom: 5rem;
+}
+
+#languages a{
+    text-decoration: none;
+    font-size: 13px;
+    margin: 2px;
+    font-weight: 400;
+    color: #00a;
+}
+
+/* footer */
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    border-top: 1px solid #ddd;
+    color: #777;
+    font-size: 14px;
+    min-height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 10px;
-    height: 20px; */
-    font-size: normal;
-    padding: 12px;
-    border-radius: 50%;
-    
+    flex-direction: column;
 }
 
-.shortcut-name {
-    font-size: 13px;
-    font-weight: 400;
-    color: rgb(71, 66, 66);
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+#country {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
 }
 
-/* customize btn */
-#customize {
-    position: absolute;
-    right: 1.5rem;
-    bottom: 1rem;
-    padding: 0.6rem 1.5rem;
-    background-color: rgba(10, 10, 10, 0.6);
-    color: white;
-    border: none;
-    outline: none;
-    border-radius: 50px;
+#footer-ul {
+ display: flex;
+ justify-content: space-between;
+}
+
+.ul {
+    display: flex;
 }
 
 
@@ -236,6 +241,7 @@ label input {
             width: 45%;
         }
 }
+
 
 /* 670px and below */
 @media screen and (max-width: 670px) {
